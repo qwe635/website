@@ -1,49 +1,49 @@
 ---
-title: Local source
-titleTemplate: Guides
-description: For users who would like to download and organize their own media.
+标题：本地源
+titleTemplate：参考线
+描述：适用于希望下载和组织自己的媒体的用户。
 ---
 
-# Local source
+#本地源
 
-If you like to download and organize your media, then you want to know how to manage your own series in Tachiyomi.
+如果你喜欢下载和组织你的媒体，那么你想知道如何管理你自己的系列在Tachiyomi。
 
-::: warning
-This page explores some advanced features.
+**警告
+本页将探索一些高级功能。
 :::
 
-## Creating local series
+##创建本地序列
 
-1. In the location you specified as your storage location (e.g., `/Tachiyomi/`), there should be a `local` folder. Place correctly structured series inside that (e.g. `/Tachiyomi/local/`).
+1.在您指定为存储位置的位置(例如，`/Tachiyomi/`)，应该有一个`当地的`文件夹。将结构正确的系列放入其中(例如`/Tachiyomi/local/`).
 
-    > If adding series in folders it is recommended to add a file named `.nomedia` to the local folder so images do not show up in the gallery.
+    >如果在文件夹中添加系列，建议添加名为`.nomedia`复制到本地文件夹，以便图像不会显示在画廊中。
 
-1. You should now be able to access the series in <nav to="sources"> under **Local source**.
+1.现在，您应该能够访问<NAV到="来源">在……下面**本地源**.
 
-If you add more chapters then you'll have to manually refresh the chapter list (by pulling down the list).
+如果您添加了更多章节，则必须手动刷新章节列表(通过下拉该列表)。
 
-Supported chapter formats are folders with pictures inside (such as `.jpg`, `.png`, etc) or archive files (`ZIP`/`CBZ`, `RAR`/`CBR`, and `EPUB`).
-But expect better performance with directories and `ZIP`/`CBZ`.
+支持的章节格式是包含图片的文件夹(例如`.jpg`,`.png`等)或归档文件(`拉链`/`CBZ`,`RAR`/`CBR`，和`EPUB`).
+但希望在目录和`拉链`/`CBZ`.
 
-Note that a single folder or archive file is treated as a single chapter. For example, Tachiyomi will not automatically split an `EPUB` file containing multiple chapters into separate chapters within the app.
+请注意，单个文件夹或归档文件被视为单个章节。例如，Tachiyomi不会自动拆分`EPUB`在应用程序中包含多个章节的文件。
 
-### Folder structure
+###文件夹结构
 
-Tachiyomi requires a specific folder structure for local series to be correctly processed.
-Local series will be read from the `local` folder.
-Each series must have a `Series` folder and a `Chapter` folder.
-Images will then go into the chapter folder.
-See below for more information on archive files.
-You can refer to the following example:
+Tachiyomi需要特定的文件夹结构才能正确处理本地序列。
+本地序列将从`当地的`文件夹。
+每个系列必须具有`系列`文件夹和`章节`文件夹。
+然后图像将进入章节文件夹。
+有关归档文件的详细信息，请参阅下面的内容。
+您可以参考以下示例：
 
-:::info Example
-<div class="tree">
-  <ul>
-    <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
-    <span class="folder root">[your storage location]/local</span>
-    <li>
-      <img src="/img/folder.svg" alt="Folder" class="tree-icon icon-folder">
-      <span class="folder main">[the series title]</span>
+*信息示例
+<div班级="树">
+  <UL>
+    <IMGsrc="/img/folder.svg" alt="文件夹" 班级="树图标图标文件夹">
+    <跨度班级="文件夹根">[您的存储位置]/本地</跨度>
+    <锂>
+      <IMGsrc="/img/folder.svg" alt="文件夹" 班级="树图标图标文件夹">
+      <跨度班级="文件夹主">[系列标题]</跨度>
       <ul>
         <li>
           <img src="/img/jpeg.svg" alt="File" class="tree-icon icon-jpeg">
