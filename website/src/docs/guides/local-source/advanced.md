@@ -1,48 +1,48 @@
 ---
-title: Advanced editing
-titleTemplate: Local source - Guides
-description: Advanced local series metadata editing for enhanced library organization.
+标题：高级编辑
+titleTemplate：本地源-指南
+描述：高级本地系列元数据编辑，以增强库组织。
 ---
 
-# Advanced editing
-Advanced local series metadata editing for enhanced library organization.
+#高级编辑
+用于增强库组织的高级本地系列元数据编辑。
 
-## Editing local series details
+##编辑本地序列详细信息
 
-It is possible to add details to local series.
-Like series from other sources, you add information about the series such as the `author`, `artist`, `description`, and `genre` tags.
+可以将详细信息添加到本地系列。
+与其他来源的系列一样，可以添加有关该系列的信息，如`作者`,`艺术家`,`描述`，和`类型`标签。
 
-To import details along with your local series, you have to create a JSON file.
-It can be named anything but it must be placed within the **Series** folder.
-A standard file name is `details.json`.
-This file will contain the extended details about the series in the `JSON` format.
-You can see the example below on how to build the file.
-Once the file is there, the app should load the data when you first open the series or you can pull down to refresh the details.
+要将详细信息与本地系列一起导入，必须创建JSON文件。
+可以将其命名为任何名称，但必须将其放置在**系列**文件夹。
+标准文件名为`details.json`.
+此文件将包含有关该系列的扩展详细信息。`JSON`格式。
+您可以看到下面有关如何构建文件的示例。
+一旦文件存在，应用程序应该在您首次打开系列时加载数据，或者您可以下拉以刷新详细信息。
 
-You can copy the following example and edit the details as needed:
+您可以复制以下示例并根据需要编辑详细信息：
 
-```json
+```JSON
 {
-  "title": "Example Title",
-  "author": "Example Author",
-  "artist": "Example Artist",
-  "description": "Example Description",
-  "genre": ["genre 1", "genre 2", "etc"],
-  "status": "0",
-  "_status values": ["0 = Unknown", "1 = Ongoing", "2 = Completed", "3 = Licensed", "4 = Publishing finished", "5 = Cancelled", "6 = On hiatus"]
+"title"："示例标题"，
+"作者"："作者示例"，
+"艺术家"："示例艺术家"，
+"说明"："说明示例"，
+"流派"：["流派1"，"流派2"，"etc"]，
+"status"："0"，
+"_status values"：["0=未知"，"1=正在进行"，"2=已完成"，"3=已许可"，"4=已完成发布"，"5=已取消"，"6=处于中断状态"]
 }
 ```
-::: tip
-If you don't want to manually create the `details.json` file, you can alternatively use [this tool.](https://tachi-local.netlify.app/?utm\_source=tachi-website\&utm\_medium=referral\&utm\_campaign=tachi-website)
+**小费
+如果不想手动创建`details.json`文件，您也可以使用[这个工具。](https://tachi-local.netlify.app/?utm\_source=tachi-website\&utm\_medium=referral\&utm\_campaign=tachi-website)
 :::
 
-## Using a custom cover image
+##使用自定义封面图像
 
-It is also possible to use a custom image as a cover for each local series.
+还可以使用定制图像作为每个本地系列的封面。
 
-To do this, you only need to place the image file, that needs to be named `cover.jpg`, in the root of the series folder.
-The app will then use your custom image in the local source listing.
+为此，您只需将需要命名的图像文件`cover.jpg`，在序列文件夹的根目录中。
+然后，应用程序将在本地源列表中使用您的自定义图像。
 
-<style scoped>
+<风格作用域的>
   @import "../../../.vitepress/theme/styles/tree.styl"
-</style>
+</风格>
