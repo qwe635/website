@@ -1,51 +1,51 @@
 ---
-title: Getting started
-titleTemplate: Guides
-description: Essential information to help you get set up with Tachiyomi.
+标题：入门
+titleTemplate：参考线
+说明：帮助您设置Tachiyomi的基本信息。
 ---
 
-<script setup lang="ts">
-import { data as release } from "@theme/data/release.data"
-</script>
+<脚本设置 朗="ts">
+进口 {数据作为 释放 } 从……起 "@theme/data/release.data"
+</脚本>
 
-# Getting started
+#入门
 
-Essential information to help you get set up with Tachiyomi.
+帮助您设置Tachiyomi的基本信息。
 
-## Installation guide
+##安装指南
 
-### Downloading Tachiyomi
+###正在下载Tachiyomi
 
-1. Visit our [download](/news/2024-01-13-goodbye) page to get the latest version of **Tachiyomi**.
-2. After the download is complete, open the `.apk` file.
-3. Proceed with the installation process.
+1.访问我们的[下载](/news/2024-01-13-再见)获取最新版本的页面**立见**.
+2.下载完成后，打开`.apk`文件。
+3.继续安装过程。
 
-### Adding sources
+###添加源
 
-Once **Tachiyomi** is installed on your device, you can bring your own content to read from various sources:
+一次**立见**已安装在您的设备上，您可以从各种来源读取您自己的内容：
 
-:::: tabs
-== Local source
-Read content stored locally on your device.
+：：：：选项卡
+==本地源
+读取设备上本地存储的内容。
 
-See the [Local source guide](/docs/guides/local-source/) for instructions.
-== External repositories
-External repositories add additional sources to **Tachiyomi**. You can add external repositories by going to <nav to="browse"> and tapping **Extension repos**.
+请参阅[本地源指南](/docs/指南/本地来源/)以获取指示。
+==外部存储库
+外部存储库将其他源添加到**立见**。您可以通过以下方式添加外部存储库：<NAV到="浏览">和攻丝**扩展回购**.
 
-Once there, you can add repositories by inputing URLs ending with `index.min.json`. A small set of extensions are available [here](/extensions/).
+在此之后，您可以通过输入URL结尾为`index.min.json`。有一小部分扩展可用[在这里](/extensions/).
 
-::: danger Caution
-Tachiyomi will not provide resources for any unofficial repositories. Beware that any third-party repositories or extensions will have full access to the app and may contain malware.
+*危险警告
+Tachiyomi不会为任何非官方存储库提供资源。请注意，任何第三方存储库或扩展将拥有对应用程序的完全访问权限，并且可能包含恶意软件。
 :::
 
-Once you've added a repository, go to <nav to="extensions"> and refresh the extensions list.
+添加存储库后，请转到<NAV到="扩展名">并刷新扩展列表。
 
-You can now tap the download button next to extensions to install them.
+您现在可以点击扩展名旁边的下载按钮来安装扩展名。
 
-> You may need to [enable third-party installations](/docs/faq/browse/extensions#enabling-third-party-installations).
+>您可能需要[启用第三方安装](/docs/faq/browse/extensions#启用-第三方-安装).
 
-::: tip Official repository
-Tachiyomi has an official extension repository, you can use the **Add repository** button on the [Extensions](/extensions/) page, or copy the url manually below.
+*提示官方资料库
+Tachiyomi有一个官方的扩展库，您可以使用**添加存储库**上的按钮[扩展](/extensions/)页，或在下面手动复制url。
 > `https://raw.githubusercontent.com/tachiyomiorg/extensions/repo/index.min.json`
 :::
 == Manual extensions
